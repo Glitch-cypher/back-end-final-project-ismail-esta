@@ -50,3 +50,17 @@ Returns to successful requests in the from:
 ### GET to /feedback
 
 Returns to successful requests in the from:
+
+```
+{success: true,
+data: 
+  [{"uid": "d6587569589dk3r437890584gjfni",
+  "duedate": "2020-11-15T00:00:00.000Z",
+  "datesubmitted": "2020-11-15T00:00:00.000Z"}, ... ]}	
+
+The elipses represent more objects with the same keys.	
+```
+
+
+
+Firstly checks if there is a uid query, if there is then it will execute next() and move on to the next middleware function.
